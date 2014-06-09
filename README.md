@@ -1,4 +1,27 @@
-typewriter-js
+Typewriter JS
 =============
 
-Simple vanilla JS to simulate typewriting on a webpage.
+## What is is
+A very simple script that simulates typewriting text on a webpage.
+
+## Dependencies
+None, plain vanilla JS.
+
+## Options
+- Custom speed
+- Custom random speed
+
+## Sample Usage
+```
+var el = document.querySelectorAll('h1')[0];
+var el2 = document.querySelectorAll('h2')[0];
+
+Typewriter.start(el, 50, {
+  random: true,
+  callback: function () {
+    console.log('i am a callback');
+  }
+});
+
+Typewriter.start(el2, 75);
+```
