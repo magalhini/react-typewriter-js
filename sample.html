@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Typewritah" />
+
+<meta charset=utf-8 />
+<title>Typewriter</title>
+<meta name="viewport" content="width=device-width">
+<script src="typewriter.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
+</head>
+  
+<body>
+  
+  <div class="wrapper">
+    <h1>Random typewriting speed</h1>
+    <h2>Fixed typewriting speed.</h2>
+    
+  </div>
+
+  <script>
+	var el = document.querySelectorAll('h1')[0];
+	var el2 = document.querySelectorAll('h2')[0];
+
+	Typewritah.start(el, 50, {
+	  random: true,
+	  callback: function () {console.log('i am a callback');}
+	}); 
+	Typewritah.start(el2, 75);
+  </script> 
+  
+</body>
+</html>
