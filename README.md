@@ -1,6 +1,8 @@
 Typewriter JS
 =============
 
+![dfg](https://raw.githubusercontent.com/magalhini/typewriter-js/master/example.gif)
+
 ## What is is
 A very simple script that simulates typewriting text on a webpage.
 
