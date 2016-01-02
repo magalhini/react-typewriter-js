@@ -1,20 +1,25 @@
 Typewriter JS
 =============
 
-![dfg](https://raw.githubusercontent.com/magalhini/typewriter-js/master/example.gif)
+![ex](https://raw.githubusercontent.com/magalhini/typewriter-js/master/example.gif)
 
-## What is is
-A very simple script that simulates typewriting text on a webpage.
+A small helper script that simulates a typewriting text effect on a webpage.
 
 ## Dependencies
-None, plain vanilla JS.
+There are two versions of this project:
+
+- A plain vanilla JS (no jQuery)
+- An ES6 / React Component version
 
 ## Options
 - Custom speed
 - Custom random speed
+- Different messages (React only)
+- Custom tag to display the element (React only)
 
-## Sample Usage
-```
+## Sample Usage (vanilla)
+
+```js
 var el = document.querySelectorAll('h1')[0];
 var el2 = document.querySelectorAll('h2')[0];
 
@@ -26,4 +31,16 @@ Typewriter.start(el, 50, {
 });
 
 Typewriter.start(el2, 75);
+```
+
+## Sample Usage (React)
+
+```js
+import Typewriter from './Typewriter';
+
+<Typewriter
+    speed={88}
+    tag="pre"
+    text={["Hello world.", "What do I do now?"]}
+    randomSpeed={true} />
 ```
