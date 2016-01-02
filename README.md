@@ -1,4 +1,4 @@
-Typewriter JS
+React Typewriter
 =============
 
 ![ex](https://raw.githubusercontent.com/magalhini/typewriter-js/master/example.gif)
@@ -8,7 +8,7 @@ A small helper script that simulates a typewriting text effect on a webpage.
 ## Dependencies
 There are two versions of this project:
 
-- A plain vanilla JS (no jQuery)
+- A plain vanilla JS (no jQuery, no libraries)
 - An ES6 / React Component version
 
 ## Options
@@ -17,7 +17,7 @@ There are two versions of this project:
 - Different messages (React only)
 - Custom tag to display the element (React only)
 
-## Sample Usage (vanilla)
+## Sample Usage (vanilla version)
 
 ```js
 var el = document.querySelectorAll('h1')[0];
@@ -33,7 +33,7 @@ Typewriter.start(el, 50, {
 Typewriter.start(el2, 75);
 ```
 
-## Sample Usage (React)
+## Sample Usage (React version)
 
 ```js
 import Typewriter from './Typewriter';
